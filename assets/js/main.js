@@ -19,10 +19,10 @@ async function fetchMeaning(event) {
                 tooltip.innerText = `${selectedWord} is not a valid word. No meaning found!`;
             } else{
                 const data = await response.json();
-                console.log(data[0]?.meanings[0]?.definitions[0]);
+                console.log(data[0]?.meanings[0]?.definitions[0]?.definition);
                 const meaning = data[0]?.meanings[0]?.definitions[0]?.definition;
 
-                tooltip.innerText = `"${selectedWord}" : ${meaning}`;
+                tooltip.innerHTML= `<h3>"${selectedWord}"</h3><p><i>${meaning}</i></p>`;
             }
             tooltip.style.display = 'block';
             tooltip.style.top = `${event.clientY + 15}px`;
