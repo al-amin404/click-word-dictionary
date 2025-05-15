@@ -14,10 +14,15 @@ Requires PHP: 8.0
 
 defined('ABSPATH') || exit;
 
+// $plugin_data = get_file_data(__FILE__, ['Version' => 'Version']);
+$plugin_data = get_plugin_data(__FILE__, false, false);
+$version = $plugin_data['Version'];
+
 add_action('wp_enqueue_scripts', 'cwd_enqueue_scripts');
 function cwd_enqueue_scripts(){
+    global $version;
     if(is_single()){
-        wp_enqueue_script('cwd_script', plugin_dir_url(__FILE__).'assets/js/main.js',[],'1.0.0', true);
-        wp_enqueue_style('cwd_style', plugin_dir_url(__FILE__).'assets/css/style.css',[],'1.0.0');
+        wp_enqueue_script('cwd_script', plugin_dir_url(__FILE__).'assets/js/main.js',[],$version, true);
+        wp_enqueue_style('cwd_style', plugin_dir_url(__FILE__).'assets/css/style.css',[],$version);
     }
 }
