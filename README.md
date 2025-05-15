@@ -1,1 +1,2 @@
-<h2>Click Word Dictionary</h2><span>is a simple WordPress plugin that lets users see the definition of any word in post content just by selecting the word. </span>
+<h2>Click Word Dictionary</h2><p>It's a simple WordPress plugin that lets users see the definition of any word in post content just by selecting the word. </p>
+<div style="position:relative; width:100%; height:0px; padding-bottom:53.261%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/1uodt3?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
