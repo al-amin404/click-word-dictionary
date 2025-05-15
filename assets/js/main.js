@@ -3,17 +3,6 @@ const tooltip = document.createElement('div');
 tooltip.id = 'tooltip';
 document.body.appendChild(tooltip);
 
-//tooltip styles
-const tStyle = tooltip.style;
-tStyle.display = 'none';
-tStyle.width = '200px';
-tStyle.fontSize = '0.9rem';
-tStyle.padding = '8px';
-tStyle.position = 'absolute';
-tStyle.backgroundColor = '#020618';
-tStyle.color = 'white';
-tStyle.boxShadow = '0px 0px 5px 2px #02061880';
-
 //fetch the Word Definition on selecting word
 document.addEventListener('dblclick', fetchMeaning);
     
