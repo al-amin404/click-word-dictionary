@@ -22,7 +22,7 @@ async function fetchMeaning(event) {
                 console.log(data[0]?.meanings[0]?.definitions[0]);
                 const meaning = data[0]?.meanings[0]?.definitions[0]?.definition;
 
-                tooltip.innerText = `"${selectedWord}" means: ${meaning}`;
+                tooltip.innerText = `"${selectedWord}" : ${meaning}`;
             }
             tooltip.style.display = 'block';
             tooltip.style.top = `${event.clientY + 15}px`;
